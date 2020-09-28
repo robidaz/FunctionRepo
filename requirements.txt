@@ -1,0 +1,8 @@
+cx-Oracle
+pandas
+boto3
+requests
+botocore
+tkinter
+retrying
+smtplib
