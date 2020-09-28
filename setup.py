@@ -16,8 +16,6 @@ Programming Language :: Python
 Programming Language :: Python :: 3
 '''.strip().splitlines()
 
-with open(join(CURDIR, 'src', __packagename__, '__init__.py')) as f:
-    VERSION = re.search("\n__version__ = '(.*)'", f.read()).group(1)
 with open(join(CURDIR, 'requirements.txt')) as f:
     REQUIREMENTS = f.read().splitlines()
 EXTS = [
@@ -44,7 +42,7 @@ def package_files(directory):
 
 setup(
     name=__distname__,
-    version=VERSION,
+    version='0.0.1',
     description='Collection of Functions',
     author='Zach Robida',
     author_email='robidaz@gmail.com',
